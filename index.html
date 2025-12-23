@@ -1,95 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Form</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        form {
-            width: 400px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        fieldset {
-            border: 1px solid black;
-            padding: 10px;
-            margin: 0;
-        }
-        legend {
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        textarea,
-        input[type="date"] {
-            width: calc(100% - 20px);
-            padding: 8px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .gender-group {
-            margin-bottom: 10px;
-        }
-        .gender-group label {
-            display: inline-block;
-            margin-left: 10px;
-        }
-        input[type="radio"] {
-            margin-left: 10px;
-            vertical-align: middle;
-        }
-        input[type="submit"] {
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Personal Blog</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <form>
-        <fieldset>
-            <legend>User Personal Information</legend>
-            <label for="name">Enter your full name:</label>
-            <input type="text" id="name" name="name" required />
-            <label for="email">Enter your email:</label>
-            <input type="email" id="email" name="email" required />
-            <label for="password">Enter your password:</label>
-            <input type="password" id="password" name="pass" required />
-            <label for="confirmPassword">Confirm your password:</label>
-            <input type="password" id="confirmPassword" name="confirmPass" required />
-            <label>Enter your gender:</label>
-            <div class="gender-group">
-                <input type="radio" name="gender" value="male" id="male" required />
-                <label for="male">Male</label>
-                <input type="radio" name="gender" value="female" id="female" />
-                <label for="female">Female</label>
-                <input type="radio" name="gender" value="others" id="others" />
-                <label for="others">Others</label>
-            </div>
-            <label for="dob">Enter your Date of Birth:</label>
-            <input type="date" id="dob" name="dob" required />
-            <label for="address">Enter your Address:</label>
-            <textarea id="address" name="address" required></textarea>
-            <input type="submit" value="Submit" />
-        </fieldset>
-    </form>
+<body>                                                                                                                                                                        
+    <header>
+        <h1>Welcome to My Personal Blog</h1>
+        <hr><hr>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#posts">Blog Posts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Introduction</h2>
+            <p>This is a place where I share my thoughts and experiences. Stay tuned for more updates!</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate writer and developer who enjoys sharing knowledge on various topics.</p>
+        </section>
+
+        <section id="posts">
+            <h2>Latest Blog Posts</h2>
+            <article>
+                <h3>My First Blog Post</h3>
+                <p>Welcome to my first blog post! Here, I’ll be discussing web development basics and more.</p>
+                <a href="blog-post1.html">Read More</a>
+            </article>
+            <article>
+                <h3>Exploring HTML Elements</h3>
+                <p>In this post, we will delve deeper into HTML elements such as block-level and inline elements.</p>
+                <a href="blog-post2.html">Read More</a>
+            </article>
+            <article>
+                <h3>Exploring CSS style Elements</h3>
+                <p>This post covers advanced topics in web development, including CSS styling and responsive desgin</p>
+                <a href="blog-post3.html">Read More</a>
+
+            </article>
+        </section>
+
+        <aside>
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#posts">Blog Posts</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Personal Blog | Contact: myemail@example.com</p>
+    </footer>
 </body>
 </html>
